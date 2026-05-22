@@ -1,9 +1,203 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>CI/CD shivangi Demo github</title>
+    <meta charset="UTF-8">
+    <title>Shivangi | GitHub Dev Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body{
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color:#fff;
+            min-height:100vh;
+        }
+
+        header{
+            text-align:center;
+            padding:60px 20px;
+            animation: fadeIn 1.5s ease-in;
+        }
+
+        header h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        header p{
+            font-size:1.2rem;
+            opacity:0.9;
+        }
+
+        .container{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:25px;
+            margin:40px 20px 100px;
+        }
+
+        .card{
+            background:#fff;
+            color:#333;
+            width:320px;
+            padding:30px;
+            border-radius:18px;
+            box-shadow:0 15px 35px rgba(0,0,0,0.35);
+            transition:0.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-10px);
+            box-shadow:0 25px 45px rgba(0,0,0,0.45);
+        }
+
+        .card h2{
+            margin-bottom:15px;
+            color:#203a43;
+        }
+
+        .card p{
+            line-height:1.7;
+            font-size:0.96rem;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 22px;
+            border-radius:30px;
+            text-decoration:none;
+            color:#fff;
+            background:linear-gradient(45deg,#203a43,#2c5364);
+            transition:0.3s;
+            font-size:0.9rem;
+        }
+
+        .btn:hover{
+            background:linear-gradient(45deg,#2c5364,#203a43);
+        }
+
+        .skills{
+            margin-top:15px;
+        }
+
+        .skills span{
+            display:inline-block;
+            background:#203a43;
+            color:#fff;
+            padding:6px 12px;
+            margin:5px;
+            border-radius:20px;
+            font-size:0.8rem;
+        }
+
+        footer{
+            text-align:center;
+            padding:15px;
+            background:rgba(0,0,0,0.25);
+            position:fixed;
+            bottom:0;
+            width:100%;
+            font-size:0.85rem;
+        }
+
+        @keyframes fadeIn{
+            from{
+                opacity:0;
+                transform:translateY(-20px);
+            }
+            to{
+                opacity:1;
+                transform:translateY(0);
+            }
+        }
+
+        @media(max-width:768px){
+            header h1{
+                font-size:2.2rem;
+            }
+
+            .card{
+                width:90%;
+            }
+        }
+    </style>
 </head>
+
 <body>
-<h1>Hello Apache CI/CD!</h1>
+
+<header>
+    <h1>💻 GitHub Developer Portfolio</h1>
+    <p>Code • Projects • Open Source • Cloud Engineering</p>
+</header>
+
+<section class="container">
+
+    <div class="card">
+        <h2>👩‍💻 About Me</h2>
+        <p>
+            Hi, I’m <b>Shivangi</b>, an AWS Cloud & Linux enthusiast passionate
+            about DevOps, automation, and modern cloud technologies.
+            I love building scalable solutions and sharing projects on GitHub.
+        </p>
+
+        <div class="skills">
+            <span>AWS</span>
+            <span>Linux</span>
+            <span>GitHub</span>
+            <span>DevOps</span>
+        </div>
+
+        <a href="#" class="btn">View Profile</a>
+    </div>
+
+    <div class="card">
+        <h2>🚀 GitHub Projects</h2>
+        <p>
+            Explore my repositories including:
+            <br><br>
+            ✔ AWS Projects<br>
+            ✔ CI/CD Pipelines<br>
+            ✔ Linux Automation Scripts<br>
+            ✔ Static Website Hosting<br>
+            ✔ Docker & Kubernetes Labs
+        </p>
+
+        <a href="#" class="btn">Explore Repositories</a>
+    </div>
+
+    <div class="card">
+        <h2>🌐 Technologies</h2>
+        <p>
+            Working with modern cloud and development tools to create
+            reliable, scalable, and production-ready applications.
+        </p>
+
+        <div class="skills">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Git</span>
+            <span>Docker</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+        </div>
+
+        <a href="#" class="btn">Contact Me</a>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 Shivangi | Built with ❤️ using GitHub & Web Technologies
+</footer>
+
 </body>
 </html>
